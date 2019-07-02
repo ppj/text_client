@@ -10,7 +10,7 @@ defmodule TextClient.Interact do
   defp setup_state(game) do
     %State{
       game_service: game,
-      tally: Hangman.Game.tally(game),
+      tally: Hangman.tally(game),
     }
   end
 end
